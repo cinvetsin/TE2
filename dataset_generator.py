@@ -12,8 +12,8 @@ sizes = {
 # Function to generate strongly correlated dataset
 def generate_strongly_correlated(size):
     # Generate for values and weight
-    values = [random.randint(1, 10 * size) * 3 for v in range(size)]
-    weight = [random.randint(1, 2 * size) * 2 for w in range(size)]
+    values = [random.randint(1, 10 * size) for v in range(size)]
+    weight = [random.randint(1, 2 * size) for w in range(size)]
 
     W = 10 * size + random.randint(1, size)
     return W, values, weight

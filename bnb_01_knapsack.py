@@ -171,7 +171,7 @@ def load_data_from_csv(filename):
 
 # Custom profiler function to measure execution time of main() function
 def profile_main():
-    input_csv_filename = 'strongly_correlated_example.csv'
+    input_csv_filename = 'strongly_correlated_large.csv'
 
     for W, val, wt in load_data_from_csv(input_csv_filename):
         items = list(zip(val, wt))
